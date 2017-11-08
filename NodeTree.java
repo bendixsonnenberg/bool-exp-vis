@@ -1,6 +1,23 @@
 class NodeTree {
-   public static void main(String args[]){
-   } 
+    /*
+     * first we will have to remove all space, because they
+     * will only get in the way.
+     */
+    public static void main(String args[]){
+    } 
+    static Node evaluate_right(String exp){
+        /* will evaluate an expression to the right of an opperand
+         * example:
+         * x && (y || z) && a && b
+         * this function would get the string "(y || z) && a && b"
+         * and return the node that combines y and z with OR
+         * right because it is on the RIGHT sie of the first AND
+         * and therefore has to start evaluating from the left
+         */
+    }
+    static Node evaluate_left(String exp){
+        // anlog to evaluate_right, just on the other side of the expression.
+    }
 }
 class Node{
     /*
